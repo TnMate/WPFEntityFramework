@@ -1,0 +1,31 @@
+﻿<Window x:Class="Tetris2.LoadWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Játék betöltése" Height="300" Width="400" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ListBox Grid.Row="0" ItemsSource="{Binding Games}" SelectedItem="{Binding Path=SelectedGame, Mode=TwoWay}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <!-- megadjuk a létező mentések reprezentációját -->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Name}" />
+                        <TextBlock Text="{Binding Path=Time, StringFormat=yyyy. MM. dd. HH:mm:ss}" Margin="10,0,0,0" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" FlowDirection="RightToLeft">
+            <Button Command="{Binding LoadGameCloseCommand}" Width="75" Content="Betöltés" Margin="0,0,10,0" />
+        </StackPanel>
+    </Grid>
+</Window>
+

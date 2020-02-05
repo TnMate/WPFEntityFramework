@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris2", "Tetris2\Tetris2.csproj", "{B6723911-6A52-48F8-8324-7D5AB5A96EE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris.Test", "Tetris.Test\Tetris.Test.csproj", "{7F347165-DD61-477D-96FE-31D2AE4A9930}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris.Persistence", "Sudoku.Persistence\Tetris.Persistence.csproj", "{D3C03C6F-426D-435D-A788-A6D364398C13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris.Persistence.Db", "Sudoku.Persistence.Db\Tetris.Persistence.Db.csproj", "{7CEA4333-436A-4B18-A99A-3CC2AC8307CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris.Persistence.File", "Sudoku.Persistence.File\Tetris.Persistence.File.csproj", "{1E7122E8-E10F-40F9-B9F6-008B8262751A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6723911-6A52-48F8-8324-7D5AB5A96EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6723911-6A52-48F8-8324-7D5AB5A96EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6723911-6A52-48F8-8324-7D5AB5A96EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6723911-6A52-48F8-8324-7D5AB5A96EE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F347165-DD61-477D-96FE-31D2AE4A9930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F347165-DD61-477D-96FE-31D2AE4A9930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F347165-DD61-477D-96FE-31D2AE4A9930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F347165-DD61-477D-96FE-31D2AE4A9930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3C03C6F-426D-435D-A788-A6D364398C13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3C03C6F-426D-435D-A788-A6D364398C13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3C03C6F-426D-435D-A788-A6D364398C13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3C03C6F-426D-435D-A788-A6D364398C13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CEA4333-436A-4B18-A99A-3CC2AC8307CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CEA4333-436A-4B18-A99A-3CC2AC8307CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CEA4333-436A-4B18-A99A-3CC2AC8307CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CEA4333-436A-4B18-A99A-3CC2AC8307CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E7122E8-E10F-40F9-B9F6-008B8262751A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7122E8-E10F-40F9-B9F6-008B8262751A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7122E8-E10F-40F9-B9F6-008B8262751A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7122E8-E10F-40F9-B9F6-008B8262751A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A92CEB35-E579-42D7-ABD0-28F83082DD0E}
+	EndGlobalSection
+EndGlobal

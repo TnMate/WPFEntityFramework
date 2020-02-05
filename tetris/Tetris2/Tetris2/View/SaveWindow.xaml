@@ -1,0 +1,32 @@
+﻿<Window x:Class="Tetris2.SaveWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Játék mentése" Height="300" Width="400" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ListBox Grid.Row="0" ItemsSource="{Binding Games}" SelectedItem="{Binding Path=SelectedGame, Mode=TwoWay}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <!-- megadjuk a létező mentések reprezentációját -->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Name}" />
+                        <TextBlock Text="{Binding Path=Time, StringFormat=yyyy. MM. dd. HH:mm:ss}" Margin="10,0,0,0" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <DockPanel Grid.Row="1" FlowDirection="RightToLeft">
+            <Button Command="{Binding SaveGameCloseCommand}" Width="75" Content="Mentés" Margin="0,0,10,0" />
+            <TextBox Text="{Binding Path=NewName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" />
+            <!-- szövegdoboz az új mentés nevével -->
+        </DockPanel>
+    </Grid>
+</Window>
